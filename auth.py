@@ -33,7 +33,7 @@ def buttons(message):
 def return_button(message):
     keyboard = types.InlineKeyboardMarkup()
     keyboard.add(types.InlineKeyboardButton(text=f'hgfjfgjhgf', callback_data=f'ghfjjghj'))
-    bot.send_message(message.chat.id, '', reply_markup=keyboard)
+    bot.send_message(message.chat.id, 'ergdergdr', reply_markup=keyboard)
 
 @bot.callback_query_handler(func=lambda call: True)
 def query_handler(call):
@@ -62,6 +62,7 @@ def query_handler(call):
     for desc in exists:
         bot.send_message(call.message.chat.id, f'*{desc[1]}\n{desc[2]}*\n[Ссылка]({desc[3]})', parse_mode='Markdown')
     cursor.close()
+    bot.register_next_step_handler(call.message, return_button(call.message))
 
 # Запускаем бота
 bot.polling(none_stop=True, interval=0)
