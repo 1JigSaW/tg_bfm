@@ -1,3 +1,3 @@
 # tg BFM
 
-![](https://smarthomepursuits.com/wp-content/uploads/2021/08/how-to-create-a-telegram-bot.jpg)
+![](https://flowxo.com/wp-content/uploads/2021/03/Telegram-Logo-512x512.png)
